@@ -7,7 +7,7 @@ export default function Header() {
   const section = ["About", "Projects", "Expertise", "Showcase", "Contact"];
   return (
     <>
-      <div className="flex flex-row justify-between items-center border border-white border-opacity-60 rounded-[20px] px-9 py-5 w-full ">
+      <div className="absolute left-1/2 -translate-x-1/2 flex flex-row justify-between items-center border border-white border-opacity-60 rounded-[20px] px-11 py-5 w-11/12">
         <div
           className="flex flex-row gap-[10px] justify-center items-center cursor-pointer"
           onClick={() => {
