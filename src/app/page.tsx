@@ -18,9 +18,9 @@ export default function Home() {
         <div className="p-4 flex flex-col gap-3">
           <Header />
           <HeroSection />
-          <AboutMe />
+          {/* <AboutMe />
           <Projects />
-          <Expertise />
+          <Expertise /> */}
           <Footer />
         </div>
         
