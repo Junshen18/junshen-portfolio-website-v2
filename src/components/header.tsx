@@ -17,6 +17,7 @@ export default function Header() {
           <Image src="/websitelogo.png" width={50} height={30} alt="logo" />
           <p className="font-extrabold text-2xl">JUN SHEN</p>
         </div>
+
         <div className="flex flex-row gap-10 text-2xl font-light transition-all">
           {section.map((item) => (
             <p key={item} className="w-auto cursor-pointer hover:font-semibold">
@@ -24,9 +25,11 @@ export default function Header() {
             </p>
           ))}
         </div>
+
         <div className="cursor-pointer">
           <Image src="/Menu.png" width={40} height={40} alt="menu" />
         </div>
+        
       </div>
     </>
   );
