@@ -1,9 +1,11 @@
+import Link from "next/link"
+
 export function Footer(){
     return(
         <>
             <div className="md:p-7 flex flex-col ">
-                <div className="grid grid-cols-2 ">
-                    <div className="text-base flex flex-col gap-3 mb-6">
+                <div className="grid grid-cols-2 text-sm md:px-10 lg:text-base lg:grid-cols-4 gap-5 lg:mb-7">
+                    <div className="flex flex-col gap-3 mb-10">
                         <div className="font-semibold">
                             PHONE NUMBER
                         </div>
@@ -11,7 +13,7 @@ export function Footer(){
                             011-5128 8210
                         </div>
                     </div>
-                    <div className="text-base flex flex-col gap-3 mb-6">
+                    <div className="flex flex-col gap-3 mb-10">
                         <div className="font-semibold">
                             EMAIL
                         </div>
@@ -19,18 +21,14 @@ export function Footer(){
                             junshenhere@gmail.com
                         </div>
                     </div>
-                    <div className="text-base flex flex-col gap-3 mb-6">
+                    <div className="flex flex-col gap-3 mb-10">
                         <div className="font-semibold">
                             RESUME
                         </div>
-                        <div>
-                            Google Drive
-                        </div>
-                        <div>
-                            Download
-                        </div>
+                        <Link href="#">Google Drive</Link>
+                        <Link href="#">Download</Link>
                     </div>
-                    <div className="text-base flex flex-col gap-3 mb-6">
+                    <div className="flex flex-col gap-3 mb-10">
                         <div className="font-semibold">
                             LATEST UPDATE
                         </div>
