@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { useEffect } from "react";
+import { Reveal } from "./reveal";
 
 export default function AboutMe(){
     return(
@@ -6,20 +8,30 @@ export default function AboutMe(){
             <div className="h-screen w-[99%] px-12">
 
                 <div className="flex flex-col gap-12 justify-center w-full">
-                    <div className="text-[80px] font-extrabold justify-center flex">
-                        About Me
+                    
+                    <div className="justify-center flex w-full text-[80px] font-extrabold">
+                    <Reveal >
+                        <div>
+                            About Me
+                        </div>
+                    </Reveal>
                     </div>
-
                     <div className="flex justify-center items-center">
-                        <Image
-                        src="/aboutme1.png"
-                        width={500}
-                        height={320}
-                        alt="devmatch-hackathon"
-                        className="rounded-2xl"
-                        />
+                    <Reveal >
+                    
+                    <Image
+                    src="/aboutme1.png"
+                    width={500}
+                    height={320}
+                    alt="devmatch-hackathon"
+                    className="rounded-2xl"
+                    />
+                
+                </Reveal>
                     </div>
-
+                    
+                    
+                    <Reveal>
                     <div className="text-2xl 2xl:text-3xl text-justify px-12 2xl:px-20">
                         I am currently pursuing a degree in Software Engineering at APU, where I have been honing my skills in various technologies. 
                         I am interested in exploring various kinds of IT topics, including Web 3 industry, and AI technology. My passion for technology 
@@ -27,6 +39,8 @@ export default function AboutMe(){
                         UI/UX desinger and Part time Artist. However, I am not limited to frontend tasks and often take on backend responsibilities, demonstrating my 
                         versatility and commitment to delivering complete solutions.
                     </div>
+                    </Reveal>
+                    
                 </div>
 
             </div>
