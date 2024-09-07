@@ -1,6 +1,6 @@
 import Image from "next/image";
 import TypeWritter from "typewriter-effect";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import Link from "next/link";
@@ -15,7 +15,7 @@ export default function HeroSection() {
         {/* Mobile View */}
         <div className="md:hidden mb-5">
             <Image
-              src="/me.jpeg"
+              src="/me-mobile.jpg"
               width={200}
               height={200}
               alt="my-picture"
@@ -129,19 +129,12 @@ export default function HeroSection() {
           <Compare
             firstImage="/me.jpeg"
             secondImage="/me-art.jpeg"
-            firstImageClassName="object-cover object-left-top md:w-[428px] 2xl:w-[493px]"
-            secondImageClassname="object-cover object-left-top md:w-[428px] 2xl:w-[493px]"
-            className="rounded-2xl h-[700px] w-[500px]"
+            firstImageClassName="object-cover object-left-top "
+            secondImageClassname="object-cover object-left-top "
+            className="rounded-2xl h-[490px] w-[350px] xl:h-[700px] xl:w-[500px]"
             slideMode="hover"
             showHandlebar={false}
           />
-          {/* <Image
-            src="/Me.jpg"
-            width={500}
-            height={800}
-            alt="my-picture"
-            className="r"
-          /> */}
         </motion.div>
 
       </div>
