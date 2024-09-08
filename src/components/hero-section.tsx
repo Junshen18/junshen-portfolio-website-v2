@@ -10,7 +10,7 @@ export default function HeroSection() {
   return (
     <>
     
-      <div className="flex flex-col justify-center md:flex-row md:gap-8 lg:p-5 2xl:p-12 px-7 md:justify-between items-center h-screen rounded-[20px] w-full">
+      <div className="flex flex-col justify-center md:flex-row md:gap-8 lg:p-5 2xl:p-12 px-7 md:justify-between items-center h-screen md:h-[800px] xl:h-screen rounded-[20px] w-full">
 
         {/* Mobile View */}
         <div className="md:hidden mb-5">
@@ -131,7 +131,7 @@ export default function HeroSection() {
             secondImage="/me-art.jpeg"
             firstImageClassName="object-cover object-left-top "
             secondImageClassname="object-cover object-left-top "
-            className="rounded-2xl h-[490px] w-[350px] xl:h-[700px] xl:w-[500px]"
+            className="rounded-2xl md:h-[420px] md:w-[300px] lg:h-[490px] lg:w-[350px] xl:h-[700px] xl:w-[500px]"
             slideMode="hover"
             showHandlebar={false}
           />
