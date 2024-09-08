@@ -13,9 +13,9 @@ export default function AboutMe(){
     ]
     return(
         <>
-            <div className="h-screen w-[99%] px-12">
+            <div id="about" className="h-screen w-[99%] px-12 flex justify-center">
 
-                <div className="flex flex-col gap-12 justify-center w-full">
+                <div className="flex flex-col gap-5 justify-center w-full">
                     <div className="justify-center flex w-full text-[80px] font-extrabold">
                         <Reveal >
                             <div>
@@ -59,13 +59,20 @@ export default function AboutMe(){
                     
 
                     <Reveal>
-                    <div className="text-2xl 2xl:text-3xl text-justify px-12 2xl:px-20">
-                        I am currently pursuing a degree in Software Engineering at APU, where I have been honing my skills in various technologies. 
-                        I am interested in exploring various kinds of IT topics, including Web 3 industry, and AI technology. My passion for technology 
-                        and problem-solving has led me to voluntarily participate in more hackathons in the future, where I primarily serve as a Front End Developer, 
-                        UI/UX desinger and Part time Artist. However, I am not limited to frontend tasks and often take on backend responsibilities, demonstrating my 
-                        versatility and commitment to delivering complete solutions.
+                    <div className="text-2xl 2xl:text-3xl text-justify px-12 2xl:px-20 flex flex-col justify-center items-center gap-5">
+                        <p>I’m currently pursuing a degree in Software Engineering at APU, 
+                        where I’m sharpening my skills in various technologies and expanding my network. 
+                        I have a strong interest in exploring a range of IT topics and cool, crazy, aesthetic stuff, 
+                        from the Web 3 industry and blockchain to fancy animation website design. 
+                        My passion for technology and problem-solving drives me to actively participate in hackathons, 
+                        where I typically take on roles as a Front End Developer, UI/UX Designer, and part-time Graphic Designer. 
+                        However, I’m not limited to frontend tasks; I also embrace backend work, showcasing my versatility 
+                        in delivering complete solutions. I love jokes and always try to add a bit of humor to life, 
+                        believing that laughter makes every challenge easier to tackle!</p>
+                        
+                        <div className="w-fit px-7 py-4 rounded-xl text-center text-4xl font-bold bg-opacity-20 bg-neutral-500">"Code is like humor. when you have to explain it it’s bad"</div>
                     </div>
+                    
                     </Reveal>
                     
                 </div>
